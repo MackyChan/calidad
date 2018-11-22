@@ -11,14 +11,12 @@ class ConsumerTest extends \PHPUnit_Framework_TestCase
     */
     public function testNombreCompleto()
     {
-
-    }
-
-    /**
-    * Probar email válido
-    */
-    public function testEmail()
-    {
-
+        
+$consumer = new Dummy();
+$consumer->setNombre('Andrea');
+$consumer->setApellido('Chi Kim ');
+$result = $consumer->nombreCompleto();
+$this->assertEquals('Andrea Chi Kim', $result);
+        
     }
 }
