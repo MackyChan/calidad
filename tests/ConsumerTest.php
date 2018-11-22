@@ -14,9 +14,9 @@ class ConsumerTest extends \PHPUnit_Framework_TestCase
         
 $consumer = new Dummy();
 $consumer->setNombre('Andrea');
-$consumer->setApellido('Chi Kim ');
+$consumer->setApellido('Chi');
 $result = $consumer->nombreCompleto();
-$this->assertEquals('Andrea Chi Kim', $result);
+$this->assertEquals('Andrea Chi', $result);
         
     }
 }
